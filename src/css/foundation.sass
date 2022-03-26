@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,500;0,800;1,500&display=swap')
+
+
+$grun: #50D890
+
+$blue: #325288
+
+@mixin flex($align-items, $justify-content , $flex-flow , )
+		display: flex
+		align-items: $align-items
+		justify-content: $justify-content 
+		flex-flow: $flex-flow
+
+@mixin center
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-flow: row
+
+@mixin clear
+	padding: 0
+	margin: 0
+	list-style: none	
+
+	
+@mixin oneo($size,$spread , $m) 
+	box-shadow: $size + vh $size + vh $spread + vh #2a4572, ($size * -1 ) + vh ($size * -1 ) + vh $spread + vh#3a5f9e , 0 0 $m + vh ($m * -.05) + vh rgba(0,0,0,0.4)
+	
+	
+@mixin ineo($size,$spread , $m) 
+	box-shadow: inset $size + vh $size + vh $spread + vh rgba(0,0,0,.4), inset ($size * -1 ) + vh ($size * -1 ) + vh $spread + vh rgba(255,255,255,0.2)	, 0 0 $m + vh ($m * -.05) + vh rgba(0,0,0,0.4)
+
+

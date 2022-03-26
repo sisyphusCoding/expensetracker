@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,500;0,800;1,500&display=swap");
+.modal {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0vh 0vh 2vh -0.5vh rgba(0, 0, 0, 0.8);
+          box-shadow: 0vh 0vh 2vh -0.5vh rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 38vh;
+  width: 36vh;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 2vh;
+  -webkit-backdrop-filter: blur(1vh);
+          backdrop-filter: blur(1vh);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1vh;
+  -webkit-animation: fade-in 400ms cubic-bezier(0, 1.09, 0.27, 1.36);
+          animation: fade-in 400ms cubic-bezier(0, 1.09, 0.27, 1.36);
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    -webkit-transform: translate3d(0, -70vh, 0) scale(0.1);
+            transform: translate3d(0, -70vh, 0) scale(0.1);
+  }
+  99.9% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1, 0.9);
+            transform: translate3d(0, 0, 0) scale(1, 0.9);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0vh, 0) scale(1);
+            transform: translate3d(0, 0vh, 0) scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    -webkit-transform: translate3d(0, -70vh, 0) scale(0.1);
+            transform: translate3d(0, -70vh, 0) scale(0.1);
+  }
+  99.9% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1, 0.9);
+            transform: translate3d(0, 0, 0) scale(1, 0.9);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0vh, 0) scale(1);
+            transform: translate3d(0, 0vh, 0) scale(1);
+  }
+}
+
+.modal > * {
+  padding: 1vh 2vh;
+}
+
+.modal .modalHeader {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.modal .modalHeader h2 {
+  font-size: 2vh;
+  font-weight: normal;
+}
+
+.modal .modalHeader .closeM {
+  cursor: pointer;
+  font-size: 2vh;
+  font-family: 'Nova Mono', monospace;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: .2vh 1vh;
+  border-radius: .7vh;
+  font-weight: normal;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: .6;
+}
+
+.modal .modalHeader .closeM:hover {
+  opacity: 1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.modal form {
+  font-size: 1.6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+  gap: 1.5vh;
+}
+
+.modal form label {
+  width: 100%;
+}
+
+.modal form p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.modal form p > * {
+  max-height: 90%;
+}
+
+.modal form p span {
+  width: 15%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 100%;
+  text-align: center;
+  padding: 0;
+  font-size: 3vh;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: bolder;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.modal form p span:hover, .modal form p span:active {
+  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+}
+
+.modal form p .minus {
+  border-radius: 1vh 0 0 1vh;
+}
+
+.modal form p .addie {
+  border-radius: 0 1vh 1vh 0;
+}
+
+.modal form button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  outline: 0;
+  border: 0;
+  border-radius: 1vh;
+  padding: .5vh 1.4vh;
+  font-size: 1.6vh;
+  background: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal form button:hover, .modal form button:active {
+  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+}
+
+.modal form input {
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  font-size: 1.6vh;
+  width: 100%;
+  outline: 0;
+  padding: 1vh 2vh;
+  border-radius: 1vh;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.modal form input:hover, .modal form input:active {
+  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+}
+
+.modal form input[type="number"] {
+  -moz-appearance: none;
+  width: 70%;
+  border-radius: 0;
+  padding: .9vh 2vh;
+  text-align: center;
+}
+
+.modal form input[type=number]::-webkit-inner-spin-button, .modal form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.modal {
+  overflow: visible !important;
+}
+
+form .innerForm {
+  max-height: 4.5vh;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 100%;
+  border-radius: 1vh;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-column-gap: 0vh;
+          column-gap: 0vh;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+form .innerForm:hover, form .innerForm:active {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0.5vh rgba(0, 0, 0, 0.4);
+}
+
+form .innerForm > * {
+  margin: 0;
+  height: 100%;
+  padding: 1vh 2vh;
+}
+
+form .innerForm i {
+  cursor: pointer;
+}
+
+form .innerForm .selectMenu {
+  padding: 1.3vh;
+  font-size: 1.6vh;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+form .innerForm .selectMenu:focus {
+  outline: none;
+}
+/*# sourceMappingURL=AddExpenseModal.css.map */
